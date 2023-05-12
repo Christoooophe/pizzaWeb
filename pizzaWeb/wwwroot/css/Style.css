@@ -1,0 +1,66 @@
+﻿body{
+    background : url("../Images/menu_background.jpg");
+    background-size : cover;
+    background-attachment : fixed;
+    display : flex;
+    flex-direction : column;
+    margin : 0;
+    font-family : Arial;
+    color : white
+}
+.logoSmall{
+    margin-top : 35px;
+    margin-left : 25px;
+    width : 15vw
+}
+.bandeauMenu{
+    background-color : #DD7835;
+    width : 30vw;
+    margin-top : 35px ;
+}
+h1 {
+    color: white;
+    text-align: left;
+    padding-left : 5vw;
+    font-size : 2vw
+}
+.bloc_pizzas{
+    margin-top: 3vh;
+    margin-bottom : 50px
+}
+.bloc_title_pizzas{
+    display : flex;
+    flex-direction : row
+}
+.bloc_title_pizzas, .ingredients {
+    text-align: left;
+    margin-left: 5vw;
+    font-weight: bold
+}
+.bloc_title_pizzas .items{
+    font-size : 2vw;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+
+}
+p, span{
+    text-transform: capitalize;
+}
+.items p {
+    margin-top: 50px;
+    margin-bottom: 12px;
+}
+.prix {
+    color: #DD7835;
+}
+.ingredients{
+    font-size : 1.2vw;
+    margin-top : 0.5vh;
+    margin-left : 0;
+    opacity : 0.7;
+    max-width : 30vw
+}
+.vege{
+    width : 5%;
+}

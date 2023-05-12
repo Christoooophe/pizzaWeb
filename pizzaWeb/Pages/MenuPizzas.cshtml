@@ -1,0 +1,42 @@
+﻿@page
+@model pizzaWeb.Pages.MenuPizzasModel
+@{
+}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="~/css/Style.css"/>
+        <title>Menu des pizzas</title>
+    </head>
+    <body>
+
+
+        <a asp-page="Index"><img src="~/Images/small_logo.png" class="logoSmall" /></a>
+
+        <div class="bandeauMenu">
+            <h1>Menu des pizzas</h1>
+        </div>
+        
+        <div class="bloc_pizzas">
+        @foreach (var item in Model.Pizza)
+        {
+            <div class="bloc_title_pizzas">
+                <div class="items">
+                    <p>
+                        @Html.DisplayFor(modelItem => item.nom) -
+                        <span class="prix">
+                            @String.Format("{0:0.00}", item.prix)€ @if (item.vege == true)
+                            {
+                                <img src="/Images/vegetalien.png" class="vege" />
+                            }
+                        </span>
+                    </p>
+                    <span class="ingredients">@Html.DisplayFor(modelItem => item.ingredients)</span>
+                </div>
+            </div>
+        }
+        </div>
+        
+    </body>
+</html>
+
